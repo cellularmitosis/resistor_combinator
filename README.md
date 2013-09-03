@@ -23,11 +23,11 @@ Let's generate a random set of 25 resistors of 1 ohm and 5% precision.
 
 This will print out the random values, and also dump them into a file called random_values.csv.
 
-Now, let's iterate towards the best possible 3x3 combination.
+Now, let's iterate towards the best 3x3 combination which gets closest to exactly 1.0 ohms:
 
 ![compute ideal arrangement](http://i.imgur.com/VpdVcgm.png)
 
-This script tries all possible combinations, and iteratively spits out the best value it has found thus far.  It's output will slow down as it runs, as better solutions become more scarce.  Right now the script is configured to 
+This script tries all possible combinations, and iteratively spits out the best value it has found thus far.  It's output will slow down as it runs, as better solutions become more scarce.  Right now the script is configured to only spit out values which are less than or equal to the ideal value (the idea being that you can stick them in a heated mineral oil bath to squeeze out that last bit of resistance).
 
 TODO: when the user quits the script, spit out the actual arrangement, so they can solder up that particular arrangement.
 
